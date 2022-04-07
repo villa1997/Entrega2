@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simulación Email</string>
+    <string name="horaMensaje">20:50</string>
+    <string name="nombrePersona">Mario Lopez</string>
+    <string name="ultimoMensaje">Correo de bienvenida</string>
+    <string name="mensaje">Este es el cuerpo del mensaje para el correo</string>
+</resources>
