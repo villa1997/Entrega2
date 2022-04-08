@@ -49,4 +49,5 @@
         android:autoSizeTextType="uniform">
 
     </TextView>
+
 </LinearLayout>
