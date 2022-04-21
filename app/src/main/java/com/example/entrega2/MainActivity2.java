@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-    String mensaje, asunto, nombre;
+    String mensaje, asunto, nombre, hora;
     TextView asuntoVista;
     TextView nombreRemitente;
     TextView mensajeRemitente;
@@ -19,13 +19,14 @@ public class MainActivity2 extends AppCompatActivity {
         mensaje = getIntent().getStringExtra("cuerpoMensaje");
         asunto = getIntent().getStringExtra("asunto");
         nombre = getIntent().getStringExtra("nombre");
+        hora = getIntent().getStringExtra("hora");
 
         asuntoVista = findViewById(R.id.asunto);
         mensajeRemitente = findViewById(R.id.cuerpoMensaje);
         nombreRemitente = findViewById(R.id.remitente);
 
         asuntoVista.setText(asunto);
-        nombreRemitente.setText("Remitente: "+nombre);
+        nombreRemitente.setText("Remitente: "+nombre + ", Hora envio: " +hora);
         mensajeRemitente.setText(mensaje);
 
     }

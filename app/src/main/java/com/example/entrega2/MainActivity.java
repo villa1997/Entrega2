@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("nombre", nombre[posicion]);
                 intent.putExtra("asunto", asunto[posicion]);
                 intent.putExtra("cuerpoMensaje", cuerpoMensaje[posicion]);
+                intent.putExtra("hora", horaUltimoMensaje[posicion]);
                 startActivity(intent);
 
             }
